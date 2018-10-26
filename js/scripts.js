@@ -43,7 +43,6 @@ function buildOutput(number, name) {
   // // Input: this function takes a string of a number
   // Output = 2d array containing iterant in 0th index and rule-based output in 1st index of each element
   var array = buildArray(number);
-  console.log("startingArray = ", array);
   for (var i = 0; i < array.length; i++) {
     var numberToEvaluate = array[i][0];
     if (checkDivisible(numberToEvaluate)) {
@@ -60,7 +59,6 @@ function buildOutput(number, name) {
       array[i].push(array[i][0])
     }
   }
-  console.log("processedArray = ", array)
   return array;
 };
 
@@ -88,11 +86,11 @@ $(function() {
   var runAppReverse = $("#go-reverse");
   var inputBox = $("#input-box");
   var name = $("#name");
+  var alertMessage = 'Please enter a single number greater than zero into the "Number to iterate" box. No spaces, letters or special charcters'
   results.hide();
 
   runApp.click(function() {
-
-    if (validateInput(inputBox.val())) {
+    if (validateInput(inputBox.val()) && (inputBox.val() > 0)) {
 
       if (outputList.is(":visible")) {
         results.slideUp();
@@ -105,13 +103,13 @@ $(function() {
       });
       results.slideDown();
     } else {
-      alert('Please only enter numbers into the "Number to iterate" box.')
+      alert(alertMessage)
     }
   });
 
   runAppReverse.click(function() {
 
-    if (validateInput(inputBox.val())) {
+    if (validateInput(inputBox.val()) && (inputBox.val() > 0)) {
 
       if (outputList.is(":visible")) {
         results.slideUp();
@@ -124,7 +122,7 @@ $(function() {
       });
       results.slideDown();
     } else {
-      alert('Please only enter numbers into the "Number to iterate" box.')
+      alert(alertMessage)
     }
   });
 
