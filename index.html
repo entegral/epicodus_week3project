@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery.js"></script>
-    <script src="js/scripts.js"></script>
-    <title></title>
-  </head>
-  <body>
-    <div class="container">
 
+<head>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+  <title></title>
+</head>
 
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Week 3 Individual Project</h1>
+      <p>Number Incrementer</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <span class="input-group-btn">
+            <button id="go" class="btn btn-default" type="button">Iterate!</button>
+          </span>
+          <input id="input-box" type="text" class="form-control" placeholder="Number to iterate to...">
+        </div>
+      </div>
+
+      <div id="results" class="col-lg-6">
+        <div class="well">
+          <ol id="output" start="0">
+            <!-- results populate here -->
+          </ol>
+        </div>
+      </div>
 
     </div>
-  </body>
+
+
+  </div>
+</body>
+
 </html>

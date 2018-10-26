@@ -59,3 +59,34 @@ function buildOutput(number){
   console.log("processedArray = ", array)
   return array;
 };
+
+
+
+// front-end
+
+function sanitizeInput(inputString){
+
+}
+
+$(function(){
+
+  var results = $("#results");
+  var outputList = $("#output");
+  results.hide();
+
+  $("#go").click(function(){
+
+    if (outputList.is(":visible")){
+      results.slideUp();
+    }
+
+    outputList.empty();
+    var inputText = $("#input-box").val();
+    buildOutput(inputText).forEach(function(each){
+      outputList.append("<li>" + each[1] + "</li>");
+    });
+    results.slideDown();
+
+  });
+
+});
