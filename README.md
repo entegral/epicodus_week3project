@@ -27,14 +27,13 @@ _GitHub, HTML, CSS, Bootstrap, Javascript, JQuery_
 
 - [ ] **JavaScript business logic and user interface logic are separate.**
 
-- [ ] **Application implements a loop and works as expected.**
+- [x] **Application implements a loop and works as expected.**
 
 - [ ] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
 
 - [ ] Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools.
 
 - [ ] All previous objectives have been met.
-
 
 - [ ] Project is in a presentable, portfolio-quality state.
 
@@ -57,17 +56,17 @@ _GitHub, HTML, CSS, Bootstrap, Javascript, JQuery_
 
 ## Specifications
 
-- [ ] Program replaces numbers containing "0" with "Beep!"
+- [x] Program replaces numbers containing "0" with "Beep!"
 ```
 * Input: 0
 * Output: ["Beep!"]
 ```
-- [ ] Program replaces numbers containing "1" with "Boop!"
+- [x] Program replaces numbers containing "1" with "Boop!"
 ```
 * Input: 1
 * Output: ["Boop!"]
 ```
-- [ ]  Program replaces numbers divisible by "3" with "Boop!"
+- [x]  Program replaces numbers divisible by "3" with "Boop!"
 ```
 * Input: 3
 * Output: ["I'm sorry, Dave. I'm afraid I can't do that."]
