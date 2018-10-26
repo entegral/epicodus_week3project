@@ -4,7 +4,7 @@
 
 ## Description
 
-A web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions:
+A web application that takes a number from a user and returns a list of numbers, from 0 up to the number provided by the user, with the following exceptions:
 
 * Numbers that contain a 0 are replaced (all digits) with "Beep!"
 * Numbers that contain a 1 are replaced (all digits) with "Boop!"
@@ -13,7 +13,7 @@ A web application that takes a number from a user and returns a range of numbers
 
 ## Setup/Installation Requirements
 
-* _Goto https://github.com/entegral/epicodus_week3project_
+* _Go to https://github.com/entegral/epicodus_week3project_
 * _Clone this project or download zip and extract contents_
 * _Open the index.html file with your Web Browser_
 * _Follow the instructions therein_

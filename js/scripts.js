@@ -47,11 +47,11 @@ function buildOutput(number, name) {
   for (var i = 0; i < array.length; i++) {
     var numberToEvaluate = array[i][0];
     if (checkDivisible(numberToEvaluate)) {
-      if (name){
-      array[i].push("I'm sorry, " + name + ". I'm afraid I can't do that.");
-    } else {
-      array[i].push("I'm sorry, Dave. I'm afraid I can't do that.");
-    }
+      if (name) {
+        array[i].push("I'm sorry, " + name + ". I'm afraid I can't do that.");
+      } else {
+        array[i].push("I'm sorry, Dave. I'm afraid I can't do that.");
+      }
     } else if (checkOne(numberToEvaluate)) {
       array[i].push("Boop!");
     } else if (checkZero(numberToEvaluate)) {
@@ -73,9 +73,9 @@ function validateInput(inputString) {
   }
 }
 
+
+
 // front-end
-
-
 
 
 
@@ -92,7 +92,7 @@ $(function() {
 
   runApp.click(function() {
 
-    if (validateInput(inputBox.val())){
+    if (validateInput(inputBox.val())) {
 
       if (outputList.is(":visible")) {
         results.slideUp();
@@ -111,7 +111,7 @@ $(function() {
 
   runAppReverse.click(function() {
 
-    if (validateInput(inputBox.val())){
+    if (validateInput(inputBox.val())) {
 
       if (outputList.is(":visible")) {
         results.slideUp();
