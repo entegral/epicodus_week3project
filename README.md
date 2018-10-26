@@ -25,33 +25,31 @@ _GitHub, HTML, CSS, Bootstrap, Javascript, JQuery_
 
 - [ ] **Logic is broken down into "plain English" specs, listed in README.**
 
-- [ ] **JavaScript business logic and user interface logic are separate.**
+- [x] **JavaScript business logic and user interface logic are separate.**
 
 - [x] **Application implements a loop and works as expected.**
 
-- [ ] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
+- [x] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
 
-- [ ] Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools.
+- [x] Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools.
 
-- [ ] All previous objectives have been met.
+- [x] All previous objectives have been met.
 
-- [ ] Project is in a presentable, portfolio-quality state.
+- [x] Project is in a presentable, portfolio-quality state.
 
-- [ ] Required functionality is in place by Friday deadline.
+- [x] Required functionality is in place by Friday deadline.
 
-- [ ] Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
+- [x] Project demonstrates understanding of this week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
 
 ## Additional Objectives
 
-- [ ] Recreate the example layout.
-
 - [ ] Add images and other custom aesthetics.
 
-- [ ] Implement different behaviors/effects/images for different inputs.
+- [x] Implement different behaviors/effects/images for different inputs.
 
-- [ ] Include an option that returns the output in reversed order (beginning with the largest number).
+- [x] Include an option that returns the output in reversed order (beginning with the largest number).
 
-- [ ] Add a second form field that takes a name. For numbers that are divisible by 3, replace the name Dave in "I'm sorry, Dave. I'm afraid I can't do that" with the name provided by the user.
+- [x] Add a second form field that takes a name. For numbers that are divisible by 3, replace the name Dave in "I'm sorry, Dave. I'm afraid I can't do that" with the name provided by the user.
 
 
 ## Specifications
