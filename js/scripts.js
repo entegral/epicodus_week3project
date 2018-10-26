@@ -64,10 +64,6 @@ function buildOutput(number, name) {
   return array;
 };
 
-
-
-// front-end
-
 function validateInput(inputString) {
   const regex = /[^1-9]+/g
   if (!inputString.match(regex)) {
@@ -77,11 +73,19 @@ function validateInput(inputString) {
   }
 }
 
+// front-end
+
+
+
+
+
+
 $(function() {
 
   var results = $("#results");
   var outputList = $("#output");
   var runApp = $("#go");
+  var runAppReverse = $("#go-reverse");
   var inputBox = $("#input-box");
   var name = $("#name");
   results.hide();
@@ -104,6 +108,27 @@ $(function() {
       alert('Please only enter numbers into the "Number to iterate" box.')
     }
   });
+
+  runAppReverse.click(function() {
+
+    if (validateInput(inputBox.val())){
+
+      if (outputList.is(":visible")) {
+        results.slideUp();
+        outputList.empty();
+      }
+
+      var inputText = inputBox.val();
+      buildOutput(inputText, name.val()).forEach(function(each) {
+        outputList.prepend("<li>" + each[1] + "</li>");
+      });
+      results.slideDown();
+    } else {
+      alert('Please only enter numbers into the "Number to iterate" box.')
+    }
+  });
+
+
 
   inputBox.keyup(function(enter) {
     if (enter.which == 13) {
