@@ -57,12 +57,26 @@ _GitHub, HTML, CSS, Bootstrap, Javascript, JQuery_
 
 ## Specifications
 
-* Program replaces "0" with "Beep!"
+* Program replaces numbers containing "0" with "Beep!"
 ```
 * Input: 0
 * Output: ["Beep!"]
 ```
-
+* Program replaces numbers containing "1" with "Boop!"
+```
+* Input: 1
+* Output: ["Boop!"]
+```
+* Program replaces numbers divisible by "3" with "Boop!"
+```
+* Input: 3
+* Output: ["I'm sorry, Dave. I'm afraid I can't do that."]
+```
+* Program generates array counting/iterating up to a given number
+```
+* Input: 9
+* Output: Beep, Boop, I'm sorry, Dave. I'm afraid I can't do that, 4, 5, I'm sorry, Dave. I'm afraid I can't do that, 7, 8, I'm sorry, Dave. I'm afraid I can't do that."
+```
 
 
 ### License
