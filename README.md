@@ -79,6 +79,18 @@ _GitHub, HTML, CSS, Bootstrap, Javascript, JQuery_
 * Input: [[0],[1],[2],[3]]
 * Output: [[1,"Beep!"],[1,"Boop1"],[2,"2"],[3,"I'm sorry, Dave. I'm afraid I can't do that"]]
 ```
+- [x]  Program uses processed array data to populate output list
+```
+* Input: 3
+* Output: "Beep!","Boop1","2","I'm sorry, Dave. I'm afraid I can't do that"
+```
+- [x]  Program uses processed array data to populate reversed-order output list
+```
+* Input: 3
+* Output: "I'm sorry, Dave. I'm afraid I can't do that","2","Boop","Beep!"
+```
+
+
 
 ### License
 Copyright (c) 2018 **_RB_** MIT license.
