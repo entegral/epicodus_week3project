@@ -13,10 +13,16 @@ A web application that takes a number from a user and returns a list of numbers,
 
 ## Setup/Installation Requirements
 
+#### Option 1:
+
 * _Go to https://github.com/entegral/epicodus_week3project_
 * _Clone this project or download zip and extract contents_
 * _Open the index.html file with your Web Browser_
 * _Follow the instructions therein_
+
+#### Option 2:
+
+* _Checkout project on GitHub Pages (here)[https://entegral.github.io/epicodus_week3project/]._
 
 ## Technologies Used
 _GitHub, HTML, CSS, Bootstrap, Javascript, JQuery_
