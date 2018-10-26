@@ -76,7 +76,7 @@ _GitHub, HTML, CSS, Bootstrap, Javascript, JQuery_
 * Input: 9
 * Output: Beep, Boop, I'm sorry, Dave. I'm afraid I can't do that, 4, 5, I'm sorry, Dave. I'm afraid I can't do that, 7, 8, I'm sorry, Dave. I'm afraid I can't do that."
 ```
-- [x]  Program iterates through array, and pushes rule-based output to second index of each element
+- [x]  Program iterates through array, and pushes rule-based output to 1st index position of each element in array
 ```
 * Input: [[0],[1],[2],[3]]
 * Output: [[1,"Beep!"],[1,"Boop1"],[2,"2"],[3,"I'm sorry, Dave. I'm afraid I can't do that"]]
