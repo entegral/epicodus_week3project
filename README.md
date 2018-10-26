@@ -22,7 +22,7 @@ A web application that takes a number from a user and returns a list of numbers,
 
 #### Option 2:
 
-* _Checkout project on GitHub Pages (here)[https://entegral.github.io/epicodus_week3project/]._
+* _Checkout project on GitHub Pages [here](https://entegral.github.io/epicodus_week3project/)._
 
 ## Technologies Used
 _GitHub, HTML, CSS, Bootstrap, Javascript, JQuery_
