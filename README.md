@@ -4,12 +4,12 @@
 
 ## Description
 
-_A web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions:
+A web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions:
 
 * Numbers that contain a 0 are replaced (all digits) with "Beep!"
 * Numbers that contain a 1 are replaced (all digits) with "Boop!"
 * Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
-_
+
 
 ## Setup/Installation Requirements
 
@@ -57,27 +57,31 @@ _GitHub, HTML, CSS, Bootstrap, Javascript, JQuery_
 
 ## Specifications
 
-* Program replaces numbers containing "0" with "Beep!"
+- [ ] Program replaces numbers containing "0" with "Beep!"
 ```
 * Input: 0
 * Output: ["Beep!"]
 ```
-* Program replaces numbers containing "1" with "Boop!"
+- [ ] Program replaces numbers containing "1" with "Boop!"
 ```
 * Input: 1
 * Output: ["Boop!"]
 ```
-* Program replaces numbers divisible by "3" with "Boop!"
+- [ ]  Program replaces numbers divisible by "3" with "Boop!"
 ```
 * Input: 3
 * Output: ["I'm sorry, Dave. I'm afraid I can't do that."]
 ```
-* Program generates array counting/iterating up to a given number
+- [x]  Program generates array counting/iterating up to a given number
 ```
 * Input: 9
 * Output: Beep, Boop, I'm sorry, Dave. I'm afraid I can't do that, 4, 5, I'm sorry, Dave. I'm afraid I can't do that, 7, 8, I'm sorry, Dave. I'm afraid I can't do that."
 ```
-
+- [x]  Program iterates through array, and pushes rule-based output to second index of each element
+```
+* Input: [[0],[1],[2],[3]]
+* Output: [[1,"Beep!"],[1,"Boop1"],[2,"2"],[3,"I'm sorry, Dave. I'm afraid I can't do that"]]
+```
 
 ### License
 Copyright (c) 2018 **_RB_** MIT license.
