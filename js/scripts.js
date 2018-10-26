@@ -1,7 +1,7 @@
 // Back-end
-function checkZero(num){
+function checkZero(num) {
   var numArray = num.toString().split("")
-  for (var digit = 0; digit < numArray.length; digit++){
+  for (var digit = 0; digit < numArray.length; digit++) {
     if (numArray[digit] == "0") {
       return true;
     }
@@ -9,9 +9,9 @@ function checkZero(num){
   return false;
 };
 
-function checkOne(num){
+function checkOne(num) {
   var numArray = num.toString().split("")
-  for (var digit = 0; digit < numArray.length; digit++){
+  for (var digit = 0; digit < numArray.length; digit++) {
     if (numArray[digit] == "1") {
       return true;
     }
@@ -19,7 +19,7 @@ function checkOne(num){
   return false;
 };
 
-function checkDivisible(num){
+function checkDivisible(num) {
   num = parseInt(num)
   if ((num % 3 === 0) && (num != 0)) {
     return true;
@@ -28,31 +28,31 @@ function checkDivisible(num){
   }
 };
 
-function buildArray(number){
+function buildArray(number) {
   // Input: this function takes a string of a number
   // Output: 2d array containing incremented numbers at first index of each element
   var number = parseInt(number);
   var finalArray = [];
-  for (var i = 0; i <= number; i++){
+  for (var i = 0; i <= number; i++) {
     finalArray.push([i]);
   }
   return finalArray;
 }
 
-function buildOutput(number, name){
+function buildOutput(number, name) {
   // // Input: this function takes a string of a number
   // Output = 2d array containing iterant in 0th index and rule-based output in 1st index of each element
   var array = buildArray(number);
   console.log("startingArray = ", array);
-  for (var i = 0; i < array.length; i++){
+  for (var i = 0; i < array.length; i++) {
     var numberToEvaluate = array[i][0];
-    if (checkDivisible(numberToEvaluate)){
+    if (checkDivisible(numberToEvaluate)) {
       array[i].push("I'm sorry, " + name + ". I'm afraid I can't do that.");
     } else if (checkOne(numberToEvaluate)) {
       array[i].push("Boop!");
-    } else if (checkZero(numberToEvaluate)){
+    } else if (checkZero(numberToEvaluate)) {
       array[i].push("Beep!")
-    }else {
+    } else {
       array[i].push(array[i][0])
     }
   }
@@ -64,11 +64,16 @@ function buildOutput(number, name){
 
 // front-end
 
-function sanitizeInput(inputString){
-
+function validateInput(inputString) {
+  const regex = /[^1-9]+/g
+  if (!inputString.match(regex)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-$(function(){
+$(function() {
 
   var results = $("#results");
   var outputList = $("#output");
@@ -77,31 +82,33 @@ $(function(){
   var name = $("#name");
   results.hide();
 
-  runApp.click(function(event){
-    event.preventDefault;
+  runApp.click(function() {
 
-    if (outputList.is(":visible")){
-      results.slideUp();
-      outputList.empty();
+    if (validateInput(inputBox.val())){
+
+      if (outputList.is(":visible")) {
+        results.slideUp();
+        outputList.empty();
+      }
+
+      var inputText = inputBox.val();
+      buildOutput(inputText, name.val()).forEach(function(each) {
+        outputList.append("<li>" + each[1] + "</li>");
+      });
+      results.slideDown();
+    } else {
+      alert('Please only enter numbers into the "Number to iterate" box.')
     }
-
-
-    var inputText = inputBox.val();
-    buildOutput(inputText, name.val()).forEach(function(each){
-      outputList.append("<li>" + each[1] + "</li>");
-    });
-    results.slideDown();
-
   });
 
-  inputBox.keyup(function(enter){
-    if(enter.which == 13){
+  inputBox.keyup(function(enter) {
+    if (enter.which == 13) {
       runApp.click();
     }
   });
 
-  name.keyup(function(enter){
-    if(enter.which == 13){
+  name.keyup(function(enter) {
+    if (enter.which == 13) {
       runApp.click();
     }
   });
