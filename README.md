@@ -23,7 +23,7 @@ _GitHub, HTML, CSS, Bootstrap, Javascript, JQuery_
 
 ## Learning Objectives
 
-- [ ] **Logic is broken down into "plain English" specs, listed in README.**
+- [x] **Logic is broken down into "plain English" specs, listed in README.**
 
 - [x] **JavaScript business logic and user interface logic are separate.**
 
@@ -43,7 +43,7 @@ _GitHub, HTML, CSS, Bootstrap, Javascript, JQuery_
 
 ## Additional Objectives
 
-- [ ] Add images and other custom aesthetics.
+- [x] Add images and other custom aesthetics.
 
 - [x] Implement different behaviors/effects/images for different inputs.
 
@@ -69,24 +69,24 @@ _GitHub, HTML, CSS, Bootstrap, Javascript, JQuery_
 * Input: 3
 * Output: ["I'm sorry, Dave. I'm afraid I can't do that."]
 ```
-- [x]  Program generates array counting/iterating up to a given number
+- [x]  Program generates a 2d array counting/iterating (from 0) up to a given number
 ```
 * Input: 9
-* Output: Beep, Boop, I'm sorry, Dave. I'm afraid I can't do that, 4, 5, I'm sorry, Dave. I'm afraid I can't do that, 7, 8, I'm sorry, Dave. I'm afraid I can't do that."
+* Output: [[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]]
 ```
 - [x]  Program iterates through array, and pushes rule-based output to 1st index position of each element in array
 ```
 * Input: [[0],[1],[2],[3]]
-* Output: [[1,"Beep!"],[1,"Boop1"],[2,"2"],[3,"I'm sorry, Dave. I'm afraid I can't do that"]]
+* Output: [[1,"Beep!"],[1,"Boop"],[2,"2"],[3,"I'm sorry, Dave. I'm afraid I can't do that"]]
 ```
 - [x]  Program uses processed array data to populate output list
 ```
-* Input: 3
-* Output: "Beep!","Boop1","2","I'm sorry, Dave. I'm afraid I can't do that"
+* Input: [[1,"Beep!"],[1,"Boop"],[2,"2"],[3,"I'm sorry, Dave. I'm afraid I can't do that"]]
+* Output: "Beep!","Boop","2","I'm sorry, Dave. I'm afraid I can't do that"
 ```
 - [x]  Program uses processed array data to populate reversed-order output list
 ```
-* Input: 3
+* Input: [[1,"Beep!"],[1,"Boop"],[2,"2"],[3,"I'm sorry, Dave. I'm afraid I can't do that"]]
 * Output: "I'm sorry, Dave. I'm afraid I can't do that","2","Boop","Beep!"
 ```
 
