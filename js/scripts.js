@@ -39,7 +39,7 @@ function buildArray(number){
   return finalArray;
 }
 
-function buildOutput(number){
+function buildOutput(number, name){
   // // Input: this function takes a string of a number
   // Output = 2d array containing iterant in 0th index and rule-based output in 1st index of each element
   var array = buildArray(number);
@@ -47,7 +47,7 @@ function buildOutput(number){
   for (var i = 0; i < array.length; i++){
     var numberToEvaluate = array[i][0];
     if (checkDivisible(numberToEvaluate)){
-      array[i].push("I'm sorry, Dave. I'm afraid I can't do that.");
+      array[i].push("I'm sorry, " + name + ". I'm afraid I can't do that.");
     } else if (checkOne(numberToEvaluate)) {
       array[i].push("Boop!");
     } else if (checkZero(numberToEvaluate)){
@@ -72,21 +72,38 @@ $(function(){
 
   var results = $("#results");
   var outputList = $("#output");
+  var runApp = $("#go");
+  var inputBox = $("#input-box");
+  var name = $("#name");
   results.hide();
 
-  $("#go").click(function(){
+  runApp.click(function(event){
+    event.preventDefault;
 
     if (outputList.is(":visible")){
       results.slideUp();
+      outputList.empty();
     }
 
-    outputList.empty();
-    var inputText = $("#input-box").val();
-    buildOutput(inputText).forEach(function(each){
+
+    var inputText = inputBox.val();
+    buildOutput(inputText, name.val()).forEach(function(each){
       outputList.append("<li>" + each[1] + "</li>");
     });
     results.slideDown();
 
+  });
+
+  inputBox.keyup(function(enter){
+    if(enter.which == 13){
+      runApp.click();
+    }
+  });
+
+  name.keyup(function(enter){
+    if(enter.which == 13){
+      runApp.click();
+    }
   });
 
 });
