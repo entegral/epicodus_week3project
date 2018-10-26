@@ -28,15 +28,14 @@ function buildArray(number){
   // Output: 2d array containing incremented numbers at first index of each element
   var number = parseInt(number);
   var finalArray = [];
-  for (var i = 0; i < number; i++){
+  for (var i = 0; i =< number; i++){
     finalArray.push([i]);
   }
-  console.log(finalArray);
   return finalArray;
 }
 
-function iterateThis(array){
-  // Input = array containing previous number at first index
+function buildOutput(array){
+  // Input = array containing arrays up to user-provided number
   // Output = array containing next number as first index, and placeholder text as second element (if applicable)
   var newIterant = [];
 
