@@ -1,3 +1,16 @@
 ul {
   list-style-type: none;
 }
+
+.jumbotron {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/A_Different_Slant_on_Carina.jpg/1280px-A_Different_Slant_on_Carina.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #eee;
+  text-shadow: 2px 2px #000;
+  font-weight: bold;
+}
+
+body {
+  background-color: #eeeeee;
+}
